@@ -5,118 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Climef Kids | Clínica Infantil em Lagarto - SE</title>
   <meta name="description" content="Climef Kids é uma clínica infantil em Lagarto, Sergipe, especializada em pediatria, saúde da criança e atendimento humanizado." />
-  <meta name="keywords" content="Climef Kids, pediatria em Lagarto, clínica infantil, saúde da criança, pediatra Sergipe" />
-
+  <meta name="keywords" content="Climef Kids, pediatria em Lagarto, clínica infantil, saúde da criança, atendimento humanizado, Lagarto SE" />
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
       background-color: #f4f9ff;
       color: #333;
     }
-
     header {
-      background: linear-gradient(135deg, #4fa3ff, #6cc7ff);
-      color: #fff;
+      background: linear-gradient(135deg, #6cc7ff, #4fa3ff);
+      color: white;
       padding: 20px 40px;
+      text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      margin: 5px 0 15px;
-      font-size: 1.1rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav ul li a {
-      color: #fff;
+    header nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
-    nav ul li a:hover {
+    header nav a:hover {
       text-decoration: underline;
     }
-
     section {
       padding: 40px;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
     }
-
-    section h2 {
-      color: #2b6cb0;
-      margin-bottom: 20px;
-    }
-
-    .services, .team, .testimonials {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-
     .card {
-      background: #fff;
+      background: white;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
-
     footer {
       background: #2b6cb0;
-      color: #fff;
-      padding: 30px 40px;
+      color: white;
       text-align: center;
+      padding: 20px;
     }
-
     footer a {
-      color: #fff;
+      color: white;
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 8px;
     }
-
     footer a:hover {
       text-decoration: underline;
-    }
-
-    .contact p {
-      margin: 8px 0;
-    }
-
-    form {
-      display: grid;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    input, textarea, button {
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    button {
-      background: #4fa3ff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #2b6cb0;
     }
   </style>
 </head>
@@ -127,121 +68,100 @@
     <h1>Climef Kids</h1>
     <p>Cuidando da saúde com amor e atenção infantil em Lagarto, SE</p>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#equipe">Equipe</a></li>
-        <li><a href="#estrutura">Estrutura</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#convenios">Convênios</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <!-- Sobre Nós -->
   <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p><strong>Missão:</strong> Promover a saúde da criança e do adolescente com atendimento humanizado, ético e de excelência.</p>
-    <p><strong>Visão:</strong> Ser referência em pediatria em Lagarto e região, reconhecida pelo cuidado, confiança e qualidade.</p>
-    <p><strong>Valores:</strong> Amor às crianças, respeito às famílias, ética profissional e compromisso com a saúde.</p>
-    <p>
-      A <strong>Climef Kids</strong> nasceu com o propósito de oferecer um cuidado especial para crianças e adolescentes,
-      unindo conhecimento médico, carinho e um ambiente acolhedor para toda a família.
-    </p>
+    <h2>Sobre a Climef Kids</h2>
+    <p><strong>Missão:</strong> Oferecer atendimento pediátrico humanizado, com carinho e foco no bem-estar da criança e do adolescente.</p>
+    <p><strong>Visão:</strong> Ser referência em saúde infantil em Lagarto e região, com qualidade, tecnologia e responsabilidade.</p>
+    <p><strong>Valores:</strong> Amor às crianças, ética, respeito às famílias e compromisso com a saúde.</p>
   </section>
 
   <!-- Serviços -->
   <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
       <div class="card">
         <h3>Consultas Pediátricas</h3>
-        <p>Atendimento completo para acompanhamento da saúde infantil.</p>
-        <p><strong>Benefício:</strong> Diagnóstico precoce e cuidado contínuo.</p>
+        <p>Acompanhamento completo da saúde e desenvolvimento infantil.</p>
       </div>
       <div class="card">
         <h3>Imunizações</h3>
-        <p>Vacinas essenciais para proteger a criança.</p>
-        <p><strong>Benefício:</strong> Prevenção de doenças.</p>
+        <p>Aplicação de vacinas de rotina com segurança e conforto.</p>
       </div>
       <div class="card">
         <h3>Acompanhamento do Crescimento</h3>
-        <p>Monitoramento do desenvolvimento físico e emocional.</p>
-        <p><strong>Benefício:</strong> Crescimento saudável e seguro.</p>
+        <p>Monitoramento regular com foco no equilíbrio e bem-estar.</p>
       </div>
       <div class="card">
         <h3>Exames Básicos</h3>
-        <p>Exames de rotina com rapidez e segurança.</p>
-        <p><strong>Benefício:</strong> Mais praticidade para a família.</p>
+        <p>Exames de rotina realizados com rapidez e cuidado.</p>
       </div>
     </div>
   </section>
 
-  <!-- Equipe -->
-  <section id="equipe">
-    <h2>Nossa Equipe</h2>
-    <div class="team">
+  <!-- Especialidades -->
+  <section id="especialidades">
+    <h2>Especialidades</h2>
+    <div class="grid">
       <div class="card">
-        <h3>Pediatras Especializados</h3>
-        <p>Profissionais qualificados, com ampla experiência no cuidado infantil.</p>
+        <h3>Pediatria Geral</h3>
       </div>
       <div class="card">
-        <h3>Equipe de Apoio</h3>
-        <p>Atendimento humanizado, preparado para acolher crianças e responsáveis.</p>
+        <h3>Alergologia Infantil</h3>
+      </div>
+      <div class="card">
+        <h3>Nutrição Infantil</h3>
+      </div>
+      <div class="card">
+        <h3>Clínica Preventiva</h3>
       </div>
     </div>
   </section>
 
-  <!-- Estrutura -->
-  <section id="estrutura">
-    <h2>Estrutura</h2>
-    <p>
-      A Climef Kids conta com uma estrutura moderna e pensada especialmente para o público infantil,
-      incluindo salas confortáveis, brinquedoteca, áreas de espera acolhedoras e equipamentos atualizados.
-    </p>
-  </section>
-
-  <!-- Depoimentos -->
-  <section id="depoimentos">
-    <h2>Depoimentos</h2>
-    <div class="testimonials">
-      <div class="card">
-        <p>“Excelente atendimento! Meu filho se sentiu muito confortável.”</p>
-        <strong>— Mãe de paciente</strong>
-      </div>
-      <div class="card">
-        <p>“Clínica organizada e profissionais muito atenciosos.”</p>
-        <strong>— Pai de paciente</strong>
-      </div>
-    </div>
+  <!-- Convênios -->
+  <section id="convenios">
+    <h2>Convênios Aceitos</h2>
+    <ul>
+      <li>ASPLAG</li>
+      <li>ASSEM</li>
+      <li>UNIMED</li>
+      <li>PREVMED CAGIPE</li>
+      <li>POSTAL SAÚDE</li>
+      <li>CAMED SAÚDE</li>
+      <li>ENERGISA SERGIPE</li>
+    </ul>
+    <p>(Convenios inspirados no site oficial da Climef existente em Lagarto) :contentReference[oaicite:3]{index=3}</p>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="contact">
+  <section id="contato">
     <h2>Contato</h2>
-    <p><strong>Endereço:</strong> Climef Kids – Lagarto, Sergipe, Brasil</p>
-    <p><strong>Telefone:</strong> (00) 0000-0000</p>
-    <p><strong>WhatsApp:</strong> (00) 90000-0000</p>
-    <p><strong>E-mail:</strong> contato@climefkids.com.br</p>
-
+    <p><strong>Endereço:</strong> Praça do Rosário, 32 - Centro, Lagarto - SE, Brasil</p>
+    <p><strong>Telefone:</strong> (79) 3631-2400</p>
+    <p><strong>WhatsApp:</strong> (79) 99802-4940</p>
+    <p><strong>Horário de atendimento:</strong> Segunda a Sexta, 06:30 – 17:30</p>
     <form>
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu e-mail" required />
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
       <textarea placeholder="Sua mensagem" rows="4"></textarea>
       <button type="submit">Enviar</button>
     </form>
-
-    <p style="margin-top:20px;">Mapa de localização (Google Maps)</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Climef Kids - Clínica Infantil em Lagarto, SE</p>
+    <p>© 2025 Climef Kids – Clínica Infantil em Lagarto, SE</p>
     <p>
-      Horário de funcionamento: Segunda a Sexta, 08h às 18h
-    </p>
-    <p>
-      <a href="#">Instagram</a> | <a href="#">Facebook</a>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a>
     </p>
   </footer>
 
